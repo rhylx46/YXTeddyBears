@@ -1,0 +1,86 @@
+﻿@model YXTeddyBears.Models.TeddyBears
+
+@{
+    ViewData["Title"] = "Details";
+}
+<body style="background-color:lightpink">
+
+    <h1 style="font-family: Brush Script MT;">Details</h1>
+
+    <div>
+        <h4 style="font-family: Gabriola;font-variant:small-caps; ">TeddyBears</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Color)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Color)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Material)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Material)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Height)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Height)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Weight)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Weight)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Manufacturer)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Manufacturer)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ImageURL)
+            </dt>
+            <dd class="col-sm-10">
+                <img src="@Url.Content(Model.ImageURL)" width="200" title="images" />
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</body>
+
+<style>
+    img[title="images"]:hover {
+        transform: scale(2.0);
+        transition: 1.5s;
+    }
+
+    dt {
+        font-variant:small-caps;
+    }
+
+    dd {
+        font-family:Bodoni MT;
+    }
+
+
+</style>

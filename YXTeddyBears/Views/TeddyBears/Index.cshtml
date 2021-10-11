@@ -1,0 +1,130 @@
+﻿@model YXTeddyBears.Models.TeddyBearsManuViewModel
+
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<body>
+
+    <h1 style="font-size: 40px; font-family: Brush Script MT;">Choose the Teddy Bears You Like, and Bring Them Home!</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+
+    <form asp-controller="TeddyBears" asp-action="Index" method="get">
+        <p>
+            <select asp-for="TeddyBearManu" asp-items="Model.Manufacturer">
+                <option value="">All</option>
+            </select>
+
+
+            Name: <input type="text" name="SearchString" />
+            <input type="submit" value="Filter" />
+        </p>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="padding:5px;">
+                    @Html.DisplayNameFor(model => model.TeddyBears[0].Name)
+                </th>
+                <th style="padding:5px;">
+                    @Html.DisplayNameFor(model => model.TeddyBears[0].Price)
+                </th>
+                <th style="padding:5px;">
+                    @Html.DisplayNameFor(model => model.TeddyBears[0].Color)
+                </th>
+                <th style="padding:5px;">
+                    @Html.DisplayNameFor(model => model.TeddyBears[0].Material)
+                </th>
+                <th style="padding:5px;">
+                    @Html.DisplayNameFor(model => model.TeddyBears[0].Height)
+                </th>
+                <th style="padding:5px;">
+                    @Html.DisplayNameFor(model => model.TeddyBears[0].Weight)
+                </th>
+                <th style="padding:5px;">
+                    @Html.DisplayNameFor(model => model.TeddyBears[0].Manufacturer)
+                </th>
+                <th style="padding:5px;">
+                    @Html.DisplayNameFor(model => model.TeddyBears[0].ImageURL)
+
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.TeddyBears)
+            {
+                <tr>
+                    <td style="padding:5px;">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td style="padding:5px;">
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td style="padding:5px;">
+                        @Html.DisplayFor(modelItem => item.Color)
+                    </td>
+                    <td style="padding:5px;">
+                        @Html.DisplayFor(modelItem => item.Material)
+                    </td>
+                    <td style="padding:5px;">
+                        @Html.DisplayFor(modelItem => item.Height)
+                    </td>
+                    <td style="padding:5px;">
+                        @Html.DisplayFor(modelItem => item.Weight)
+                    </td>
+                    <td style="padding:5px;">
+                        @Html.DisplayFor(modelItem => item.Manufacturer)
+                    </td>
+                    <td style="padding:5px;">
+                        <img src="@Url.Content(item.ImageURL)" width="50" />
+
+
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+
+<style>
+
+    body {
+        background-image: url("../img/bg_2.png");
+        background-size: cover;
+    }
+
+    td {
+        
+        font-family: Bodoni MT;
+    }
+
+    th {
+        font-variant: small-caps;
+        font-size: 1.2em;
+        color: #d6a315;
+        font-family: Book Antiqua;
+    }
+
+    h1 {
+        color: #d66598;
+
+    }
+
+    td:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+</style>

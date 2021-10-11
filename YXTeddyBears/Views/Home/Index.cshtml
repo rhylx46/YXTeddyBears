@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "Welcome to YXTeddyBears";
+}
+
+<html>
+
+<body>
+
+    <div class="text-center">
+        <h3 class="display-4" style="font-size: 40px; font-family: Brush Script MT;">Let Our Teddy Bear be the Witness of Your Best Moments.</h3>
+        <br /><br /><br/>
+
+        <div>
+            <ul>
+                <li>
+                    <img src="~/img/gf.jpg" width="400" />
+                </li>
+                <li>
+                    <img src="~/img/wedding.jpg" width="400" />
+                </li>
+                <li>
+                    <img src="~/img/baby.jpg" width="400" />
+                </li>
+                <li>
+                    <img src="~/img/couple.jpg" width="400" />
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <h2>Thanks for Shopping with Us!</h2>
+
+</body>
+
+</html>
+
+<style>
+    img {
+        box-shadow: 5px 4px 5px black;
+    }
+
+    li {
+        list-style: none;
+        float: inherit;
+        margin: 0 5px 5px 0;
+        position: relative;
+        filter: grayscale(0.8);
+        transition: 2.2s;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    li:hover {
+        filter: grayscale(0);
+        transform: scale(1.25) translate(0px, 0px) rotate(0deg);
+        z-index: 1;
+  
+        
+    }
+
+    li:nth-child(1) img{
+        transform: translate(-10px, 20px) rotate(-10deg);
+    }
+
+    li:nth-child(1) img:hover {
+        transform:none;
+        transition:2.2s;
+    }
+
+    li:nth-child(2) img {
+        transform: translate(-10px, 50px) rotate(10deg);
+    }
+
+        li:nth-child(2) img:hover {
+            transform: none;
+            transition: 2.2s;
+        }    
+    
+    li:nth-child(3) img{
+        transform: translate(10px, 20px) rotate(5deg);
+    }
+
+        li:nth-child(3) img:hover {
+            transform: none;
+            transition: 2.2s;
+        }
+
+    li:nth-child(4) img{
+        transform: translate(10px, -20px) rotate(-5deg);
+    }
+
+        li:nth-child(4) img:hover {
+            transform: none;
+            transition: 2.2s;
+        }
+
+    body {
+        background-image: url("../img/bg.jpg")
+
+
+    }
+
+    h3 {
+        text-shadow: 8px 8px 10px #000;
+        color: #ffcf4d;
+    }
+
+    h2 {
+        font-size: 50px;
+        color: #7ad7e6;
+        font-family: Brush Script MT;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 150px;
+        position: relative;
+        border-radius: 10px 20px 20px 10px;
+        background-color: aliceblue;
+        padding: 15px 0;
+        text-align:center;
+    }
+
+    h2::before {
+        width: 40%;
+        height: 10px;
+        content: '';
+        box-shadow: 0 22px 12px rgba(0,0,0,0.8);
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
+        transform: skewX(-5deg) rotate(-5deg);
+        z-index: -1;
+    }
+
+</style>

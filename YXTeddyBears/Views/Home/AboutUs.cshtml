@@ -1,0 +1,186 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<html>
+<body>
+    <h1>We are <em>My Teddy Bear&reg; Corp.</em></h1>
+
+    <h2>Our History</h2>
+    <br /><br />
+    <div>
+        <p><em>My Teddy Bear&reg; Corp.</em>  began humbly in a basement back in 1995.  From the beginning, with just a few products to offer, our goal has been to provide all kinds of teddy bear toys at reasonable rates, and to do our best to treat our customers with respect, providing top quality online customer service.  We are grateful to still be a family owned business and now offer stuffed animal toys from about 40 different manufacturers.  In addition to stuffed animal toys, we now also carry a large variety of toys that cater to the needs of our dear customers.  Over the years, we have been bless to work with some wonderful people in the ecommerce platform and some of the best toys manufacturer in the business. </p>
+    </div>
+    <br /><br />
+    <div class="wrapper">
+        <h2>Corporate Headquarter</h2>
+
+        <p>
+            <ul>
+                <li>Headquarters: Windsor, Ontario</li>
+                <li>Sales: Troy, Michigan</li>
+                <li>Distribution: Windsor, Ontario</li>
+                <li>Distribution: Toronto, Ontario</li>
+            </ul>
+
+            <img src="~/img/hq.jpg" title="hq" />
+
+        </p>
+    </div>
+    <br /><br />
+    <div class="wrapper">
+        <h2>Staffs</h2>
+        <br /><br />
+
+        <div class="owner">
+            <h3>Yuxuan Liu</h3>
+            <br /><p>The owner of the <em>My Teddy Bear&reg; Corp.</em><br /><br />Position: In charge of purchasing, web design, marketing, etc.</p>
+        </div>
+        <img src="~/img/YX.png" title="me" />
+        <hr/>
+
+        <br /><br /><br /><br /><br />
+        <div class="wife">
+            <h3>Hongqing Lu</h3>
+            <br /><p>The co-owner of the <em>My Teddy Bear&reg; Corp.</em>  (Yuxuan Liu's wife)<br /><br />Position: In charge of online product customer service, provider communication, financial, etc.</p>
+        </div>
+        <img src="~/img/staff.jpg" title="wife" />
+    </div>
+    <br /><br />
+          <div class="wrapper">
+              <h2>Our Products</h2>
+              <br /><br /><br />
+              <div>
+                  <img src="~/img/product.png" title="product" />
+                  <div class="product">
+                      <p class="intro">
+                          EVERYONE LOVES SOFT HUGS - Adorable, our soft stuffed Bear is made with smooth, silky fur; These plush toys with all kinds of size and material are oh-so squeezable and simply perfect for cuddling. <br />
+                          A FOREVER FRIENDSHIP - Our Teddy Bear is a plush animal you can love forever, designed to last and stuffed with love from our manufacturers, using 100% recycled stuffing; Features premium, long, fur of different colors and cute paw pads<br />
+                          LIFETIME GUARANTEE - The second your bear arrives it's guaranteed for life, meaning any damage can be mended at the bear hospital in Canada (the factories); If it can't, a new Bear will be sent along with condolences-and a new lifetime guarantee<br />
+                          A UNIQUE PERSONALITY - Super-soft Teddy Bear has an adorable expression, a unique mix of curiosity, mischief and fun that brings a lifetime of joy and companionship; Furry, fun plush toy is a thoughtful gift for wives, girlfriends and children<br />
+                          OUR CUSTOMERS LOVE A SOFT SQUEEZE - "Very cute and cuddly-really a precious stuffed bear" "I purchased these bears for cancer patients to hug while recovering from chemo treatments-everyone loves them" "These are great gifts"<br />
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+
+
+</body>
+
+</html>
+
+
+<style>
+    h1 {
+        font-size: 40px;
+        font-family: Gabriola;
+        text-align: center;
+        color: #803605;
+    }
+
+    h2 {
+        font-family: Book Antiqua;
+        color: #803605;
+        text-decoration:underline #803605;
+    }
+
+    h3 {
+        font-family: Book Antiqua;
+        font-size:28px;
+        font-weight:bold;
+    }
+
+    em {
+        font-variant:small-caps;
+        font-weight:bolder;
+    }
+
+    body {
+        background-image: url("../img/bg_3.png");
+        background-size:cover;
+    }
+
+    p {
+        font-family: papyrus;
+    }
+
+    ul {
+        list-style: circle;
+        font-family: Gabriola;
+        display: inline-block;
+    }
+    li {
+        font-size: 20px;
+    }
+
+    img[title="hq"] {
+        width: 400px;
+        display: inline-block;
+        margin-left: 400px;
+        box-shadow: 5px 7px 8px black;
+    }
+
+    img[title="hq"]:hover{
+        transform:scale(1.25);
+        transition:2s;
+    }
+
+    .owner {
+        display: inline-block;
+    }
+
+    img[title="me"] {
+        width: 300px;
+        display: inline-block;
+        margin-left:300px;
+    }
+
+    img[title="me"]:hover {
+        transform: scale(1.25);
+        transition: 2s;
+    }
+
+    .wife {
+        display: inline-block;
+    }
+
+    img[title="wife"] {
+        width: 280px;
+        display: inline-block;
+        margin-left: 90px;
+        box-shadow: 5px 7px 8px black;
+    }
+
+    img[title="wife"]:hover {
+        transform: scale(1.25);
+        transition: 2s;
+    }
+
+    img[title="product"] {
+        width: 200px;
+        display: inline-block;
+        margin-right: 300px;
+        float:left;
+    }
+
+    img[title="product"]:hover {
+        transform: scale(1.25);
+        transition: 2s;
+    }
+
+    .intro {
+        width: 500px;
+    }
+
+    .product {
+        display: inline-block;
+    }
+    .wrapper {
+        border: 1px dotted;
+        padding: 15px;
+    }
+
+
+
+</style>
