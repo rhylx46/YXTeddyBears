@@ -42,7 +42,7 @@
 
 2021/10/12
 
-07:38pm - Built the azure link: https://yxteddybears.azurewebsites.net/
+07:38pm - Built the azure link: https://myteddybear.azurewebsites.net/
 
 2021/10/13
 
