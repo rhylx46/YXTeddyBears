@@ -21,6 +21,7 @@ namespace YXTeddyBears.Models
                 }
 
                 context.TeddyBears.AddRange(
+                    //All products are here!
                     new TeddyBears
                     {
                         Name = "Stuffed Soft Panda",
@@ -30,6 +31,7 @@ namespace YXTeddyBears.Models
                         Height = 29.97M,
                         Weight = 330M,
                         Manufacturer = "MINISO",
+                        //Add ImageURL
                         ImageURL = "~/img/Panda.png"
                     },
 

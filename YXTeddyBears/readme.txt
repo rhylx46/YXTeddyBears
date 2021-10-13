@@ -35,9 +35,21 @@
 11:55am - Commented out the "sslPort": 44378 line in launchSetting.json to test the project on campus.
 11:59am - Switched homepage and My Teddy Bear® position in navbar.
 12:05pm - Added style to create page and changed the style of About Us page.
-12:25pm - Done with final version!!!
 
+2021/10/11
 
+06:35pm - Uploaded to the Github
+
+2021/10/12
+
+07:38pm - Built the azure link: https://yxteddybears.azurewebsites.net/
+
+2021/10/13
+
+09:31am - If you want to run this project on a new machine, you have to install the EFCore again in the PM console. 
+		 Use this: Install-Package Microsoft.EntityFrameworkCore.Design
+09:59am - Changed css on Home Index page, added transition: 2.2s to all image. Now the animation works perfectly!
+10:00am - Hope this is the final version.
 
 
 

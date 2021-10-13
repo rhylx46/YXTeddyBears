@@ -36,6 +36,8 @@ namespace YXTeddyBears.Models
         [Required]
         public string Manufacturer { get; set; }
 
+
+        //The correct format for the ImageURL
         [Display(Name = "Image")]
         [RegularExpression(@"^\~\/(\bimg\b)\/+[A-Za-z0-9]+\.(?:jpg|gif|png)$")]
         public string ImageURL { get; set; }
